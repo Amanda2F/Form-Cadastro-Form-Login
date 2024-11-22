@@ -23,7 +23,7 @@ form.addEventListener("submit", async (event) => {
                 localStorage.setItem("authToken", token);
 
                 // Redireciona o usuário para a página Home
-                window.location.href = "/home.html"; // Altere para a rota real da página
+                window.location.href = "/pagina_inicial/index.html"; // Altere para a rota real da página
             }
         } catch (error) {
             if (error.response) {
