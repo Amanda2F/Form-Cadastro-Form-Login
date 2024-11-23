@@ -17,10 +17,12 @@ form.addEventListener("submit", async (event) => {
 
             if (response.status === 200) {
                 const token = response.data.token; // Assumindo que o backend retorna um token
+                let login = true
                 alert("Login realizado com sucesso!");
 
                 // Armazena o token para autenticação futura
                 localStorage.setItem("authToken", token);
+                localStorage.setItem("isLoggedIn", login);
 
                 // Redireciona o usuário para a página Home
                 window.location.href = "/pagina_inicial/index.html"; // Altere para a rota real da página
