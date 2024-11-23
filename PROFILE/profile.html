@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Perfil</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+    <div class="profile-container">
+        <!-- Coluna 1: Foto e Links -->
+        <div class="profile-sidebar">
+            <div class="profile-image">
+                <img src="profile-pic.jpg" alt="Foto do perfil" id="profile-img">
+            </div>
+            <div>
+                <!-- Nome do usuário logado -->
+                <h3 id="username">Usuário</h3>
+            </div>
+            <div class="profile-buttons">
+                <button onclick="window.location.href='/favoritos.html'">Favoritos</button>
+                <button onclick="window.location.href='/assistir-depois.html'">Assistir Depois</button>
+            </div>
+            <div class="profile-links">
+                <a href="/ADMIN/admin.html">Área Administrativa</a>
+                <a href="/logout.html" onclick="logout()">Logout</a>
+            </div>
+        </div>        
+
+        <!-- Coluna 2: Dados do Usuário -->
+        <div class="profile-details">
+            <form id="profile-form">
+                <div class="profile-field">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" value="John Doe" required>
+                </div>
+
+                <div class="profile-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" value="john.doe@example.com" required>
+                </div>
+
+                <div class="profile-field">
+                    <label for="password">Senha</label>
+                    <div class="password-container">
+                        <input type="password" id="password" value="senha123" required>
+                        <button type="button" id="toggle-password">👁️</button>
+                    </div>
+                </div>
+
+                <div class="profile-field">
+                    <button type="submit">Salvar alterações</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>
