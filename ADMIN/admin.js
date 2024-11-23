@@ -5,7 +5,7 @@ const tableBody = document.querySelector("#users-table tbody");
         // Verifica se o token está presente
         if (!token) {
             alert("Você precisa estar logado como administrador.");
-            window.location.href = "/login.html";
+            window.location.href = "/FORM-LOGIN/index.html";
         } else if (token) {
             const payload = JSON.parse(atob(token.split('.')[1])); // Decodifica o payload
             if (payload.role !== 'admin') {

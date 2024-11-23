@@ -12,7 +12,7 @@ togglePassword.addEventListener("click", () => {
 function logout() {
     localStorage.removeItem("authToken"); // Remove o token do localStorage
     localStorage.removeItem("isLoggedIn");
-    window.location.href = "/landing_page.html"; // Redireciona para a página de login
+    window.location.href = "/FORM-LOGIN/index.html"; // Redireciona para a página de login
 }
 
 // Carregar os dados do usuário logado ao carregar a página
@@ -47,7 +47,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         });
     } else {
         alert("Você não está autenticado.");
-        window.location.href = "/login.html"; // Redireciona para a página de login se não houver token
+        window.location.href = "/FORM-LOGIN/index.html"; // Redireciona para a página de login se não houver token
     }
 });
 
