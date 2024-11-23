@@ -23,3 +23,17 @@ document.querySelectorAll('.fa-bookmark').forEach(function (bookmarkIcon) {
       this.classList.toggle('text-primary'); 
   });
 });
+
+const profileButton = document.querySelector(".login-btn");
+
+profileButton.addEventListener("click", () => {
+    const isLoggedIn = localStorage.getItem("isLoggedIn");
+
+    if (isLoggedIn === "true") {
+        // Redireciona para a página do perfil
+        window.location.href = "/PROFILE/profile.html"; // Altere para a rota real da página do perfil
+    } else {
+        // Caso o usuário não esteja logado, redireciona para a página de login
+        window.location.href = "/FORM-LOGIN/index.html"; // Altere para a rota da página de login
+    }
+});
