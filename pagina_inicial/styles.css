@@ -17,7 +17,7 @@ header {
   
 
 header img {
-  max-width: 250px;
+  max-width: 260px;
 }
 
 header .gap-3 a {
@@ -58,7 +58,7 @@ header .gap-3 a {
   border: none; 
   color: #f5ce4c; 
   font-size: 2rem; 
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
 }
 
 .header-icons .favorites-btn:hover {

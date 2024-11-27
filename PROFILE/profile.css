@@ -98,8 +98,8 @@ body {
     transform: translateY(-50%);
 }
 
-.profile-field button:hover {
-    color: #007BFF;
+.profile-submit-btn:hover {
+    opacity: 0.8;
 }
 
 .profile-field button:focus {
@@ -117,6 +117,91 @@ button[type="submit"] {
     cursor: pointer;
 }
 
-button[type="submit"]:hover {
-    background-color: #0056b3;
-}
+
+header {
+    border-bottom: none; 
+  }
+    
+  
+  header img {
+    max-width: 260px;
+  }
+  
+  header .gap-3 a {
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .custom-search-bar .input-group {
+    border-radius: 50px;
+    overflow: hidden; 
+  }
+  
+  .custom-search-bar .form-control {
+    border: none; 
+    background-color: #d9d9d9; 
+    padding: 10px 130px; 
+    text-align: start;
+  }
+  
+  .custom-search-bar .form-control::placeholder {
+    color: #656565; 
+    opacity: 0.8; 
+  }
+  
+  .custom-search-bar .btn-outline-secondary {
+    border: none; 
+    background-color: #d9d9d9; 
+    color: #656565; 
+    transition: background-color 0.3s ease-in-out; 
+  }
+  
+  .custom-search-bar .btn-outline-secondary:hover {
+    background-color: #8a8a8a; 
+  }
+  
+  /* Ícone de favoritos */
+  .header-icons .favorites-btn {
+    background: none; 
+    border: none; 
+    color: #f5ce4c; 
+    font-size: 2rem; 
+    transition: transform 0.3s ease;
+  }
+  
+  .header-icons .favorites-btn:hover {
+    transform: scale(1.2); 
+  }
+  
+  /* Ícone de login */
+  .header-icons .login-btn {
+    width: 60px; 
+    height: 60px; 
+    background-color: #f5ce4c; 
+    border: none; 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: #000000; 
+    font-size: 1.5rem; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+  }
+  
+  .header-icons .login-btn:hover {
+    background-color: #ffd900; 
+    transform: scale(1.1); 
+  }
+  
+  /* Margens dos ícones */
+  .header-icons .favorites-btn {
+    margin-right: 70px; 
+  }
+  
+  .header-icons .login-btn {
+    margin-left: 15px; 
+  }
+  
+  .home-btn{
+    border: none;
+    background-color: transparent;
+  }

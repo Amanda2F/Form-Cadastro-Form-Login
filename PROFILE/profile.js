@@ -80,4 +80,30 @@ document.getElementById("profile-form").addEventListener("submit", (event) => {
         alert("Erro ao atualizar perfil.");
         console.error("Erro:", error);
     });
+
+    // Cabeçalho
+    document.querySelector('.btn-outline-secondary').addEventListener('click', function () {
+        const query = document.querySelector('.form-control').value;
+        if (query.trim() !== "") {
+            alert(`Você buscou por: ${query}`);
+        } else {
+            alert("Por favor, insira algo na barra de pesquisa.");
+        }
+      });
+
+      
+});
+
+const homeRedirectButton = document.querySelector(".home-btn");
+
+homeRedirectButton.addEventListener("click", () => {
+    const isLoggedIn = localStorage.getItem("isLoggedIn");
+
+    if (isLoggedIn === "true") {
+        // Redireciona para a página inicial
+        window.location.href = "/pagina_inicial/index.html"; // Altere para a rota real da página inicial
+    } else {
+        // Caso o usuário não esteja logado, redireciona para a página de login
+        window.location.href = "/FORM-LOGIN/index.html"; // Altere para a rota da página de login
+    }
 });
