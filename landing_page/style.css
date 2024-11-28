@@ -1,6 +1,5 @@
 body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
+  font-family: "Josefin Sans";  margin: 0;
   padding: 0;
   background-color: #ffffff; 
   color: #343a40; 
@@ -18,8 +17,9 @@ body {
 }
 
 .bem-vindo {
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
   margin-bottom: 50px;
   color: #000000;
 }
@@ -27,26 +27,29 @@ body {
 .logo {
   max-width: 200px;
   height: auto;
-  margin-bottom: 60px;
+  margin-bottom: 71px;
 }
 
 .explore-o-mundo {
-  font-size: 1.55rem;
-  margin-bottom: 70px;
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 137px;
   color: #333333; 
 }
 
 .button-container {
-  width: 100%;
-  max-width: 300px;
+  width: 60%;
+  max-width: 250px;
 }
 
 #login-button {
-  font-size: 1rem;
-  font-weight: 500;
+  width: 230px;
+  height: 54px;
+  font-size: 24px;
+  font-weight: 400;
   background-color: #ffc800;
-  border: none;
-  padding: 10px;
+  border: 5px;
+  border-radius: 15px;
   color: #212529;
   transition: background-color 0.3s ease;
 }
@@ -56,10 +59,10 @@ body {
 }
 
 #create-account-button {
-  font-size: 1rem;
-  font-weight: 500;
-  text-decoration: none; 
-  color: #ffc800; 
+  font-family: "Josefin Sans";
+  font-size: 24px;
+  font-weight: 400;
+  color: black; 
   display: block;
   margin-top: 10px;
 }

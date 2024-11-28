@@ -60,7 +60,7 @@ document.getElementById("profile-form").addEventListener("submit", (event) => {
     const password = document.getElementById("password").value;
 
     // Enviar os dados alterados para o servidor (exemplo usando fetch)
-    fetch("/api/usuarios/editar", {
+    fetch("http://localhost:8080/user", {
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
@@ -70,7 +70,8 @@ document.getElementById("profile-form").addEventListener("submit", (event) => {
     })
     .then(response => response.json())
     .then(data => {
-        if (data.success) {
+        console.log(data)
+        if (data) {
             alert("Perfil atualizado com sucesso!");
         } else {
             alert("Erro ao atualizar perfil.");
@@ -81,18 +82,17 @@ document.getElementById("profile-form").addEventListener("submit", (event) => {
         console.error("Erro:", error);
     });
 
-    // Cabeçalho
-    document.querySelector('.btn-outline-secondary').addEventListener('click', function () {
-        const query = document.querySelector('.form-control').value;
-        if (query.trim() !== "") {
-            alert(`Você buscou por: ${query}`);
-        } else {
-            alert("Por favor, insira algo na barra de pesquisa.");
-        }
-      });
-
-      
 });
+
+// Cabeçalho
+document.querySelector('.btn-outline-secondary').addEventListener('click', function () {
+    const query = document.querySelector('.form-control').value;
+    if (query.trim() !== "") {
+        alert(`Você buscou por: ${query}`);
+    } else {
+        alert("Por favor, insira algo na barra de pesquisa.");
+    }
+  });
 
 const homeRedirectButton = document.querySelector(".home-btn");
 
